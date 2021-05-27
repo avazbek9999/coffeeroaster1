@@ -1,0 +1,61 @@
+.headquarter .container{
+   margin-bottom: 168px;
+   padding: 0 85px;
+}
+
+.headquarter__headding{
+    margin-bottom: 72px;
+    font-family: Fraunces ;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+}
+
+.headquarter__list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.headquarter__item{
+    margin-right: 95px;
+}
+
+.headquarter__item::before{
+    display: inline-block;
+    margin-bottom: 46px;
+    width: 41px;
+    height: 49px;
+    background-image: url(/picture/united.png);
+    background-repeat: no-repeat;
+    content: " ";
+
+}
+
+.canada::before{
+    background-image: url(/picture/canada.png);
+}
+
+.australia::before{
+    background-image: url(/picture/australia.png);
+}
+
+.headquarter__item__headding{
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: Fraunces ;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #333D4B;
+}
+
+
+.headquarter__item__paragrf{
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333D4B;
+}

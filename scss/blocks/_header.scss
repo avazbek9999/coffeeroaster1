@@ -1,0 +1,40 @@
+.headar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 44px 0;
+}
+.site-logo__img {
+    display: block;
+}
+
+.nav {
+    
+    margin-left: 40px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.nav__item {
+    margin-left: 33px;
+}
+
+.nav__link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888f;
+}
+
+.nav__link:hover{
+    color: #333;
+}

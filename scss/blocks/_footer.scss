@@ -1,0 +1,38 @@
+.footer .container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 88px;
+    padding: 47px 85px;
+    background: #2C343E;
+}
+
+.footer__nov .nav__link--active{
+    color: #83888F;
+}
+
+.footer__nov .nav__link:hover {
+    color: #FEFCF7;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
+
+
+
+.social-list__link{
+    display: inline-block;
+    margin-left: 24px;
+}
+
+.social-list__link:hover{   
+    background-color: #FDD6BA;
+}
+
+.social-list__img{
+    display: block;
+}
+

@@ -1,0 +1,41 @@
+.quality .container{
+    position: relative;
+    margin-bottom: 168px;
+    height: 474px;
+    padding: 88px 85px;
+    background-image: url(/picture/quality.png);
+    background-repeat: no-repeat;
+}
+
+.quality-info::before{
+    position: absolute;
+    bottom: 88px;
+    right: 85px;
+    display: inline-block;
+    width: 445px;
+    height: 474px;
+    background-image: url(/picture/quality-psevda.png);
+    background-repeat: no-repeat;
+    content: " ";
+    
+}
+
+
+.quality__headding{
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: Fraunces ;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7
+}
+
+.quality__paragrf{
+    width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+}
+

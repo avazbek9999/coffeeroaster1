@@ -1,0 +1,49 @@
+.our-collection .small-container {
+    display: flex;
+    margin-bottom: 179px;
+    width: 1150px;
+    height: 525px;
+    background-image: url(../picture/collection.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.our-collection__list {
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+    margin: 0 -15px;
+    padding: 0;
+    list-style: none;
+}
+
+.our-collection__item {
+    margin: 0;
+    padding: 0;
+    width: 255px;
+    margin: 0 15px;
+}
+
+.our-collection__img {
+    margin-bottom: 71px;
+}
+
+.our-collection__headding {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-family: Fraunces ;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333d4b;
+}
+
+.our-collection__paragrf {
+    
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+}
