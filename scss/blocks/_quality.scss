@@ -3,8 +3,8 @@
     margin-bottom: 168px;
     height: 474px;
     padding: 88px 85px;
-    background-image: url(/picture/quality.png);
-    background-repeat: no-repeat;
+    background-color: #2C343E;
+    
 }
 
 .quality-info::before{
@@ -37,5 +37,16 @@
     line-height: 26px;
     color: #FEFCF7;
     opacity: 0.8;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx){
+   .quality-info::before{
+       background-image: url(/picture/quality-psevda@2x.png);
+   }
 }
 
