@@ -1,7 +1,13 @@
-.create-plan .container{
+
+
+.create-plane__info{
+    max-width: 100%;
     padding: 134px 85px;
     background-image: url(/picture/create.png);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
     
 }
 
@@ -24,4 +30,30 @@ only screen and (min-resolution: 2dppx){
    .create-plan .container{
        background-image: url(/picture/create@2x.png);
    }
+}
+
+
+@media only screen and (max-width: 768px){
+    .create-plane__info{
+       padding: 127px 58px;
+    }
+
+    .create-plan__headding{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    
+}
+
+@media only screen and (max-width: 478px){
+    .create-plane__info{
+        text-align: center;
+        padding: 100px 24px 136px 24px;
+        
+    }
+
+    .create-plan__headding {
+        font-size: 40px;
+        line-height: 40px;
+    }
 }

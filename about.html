@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/main.min.css" />
-    </head>
-    <body>
-        <!-- ========================site header========================= -->
-        <header class="headar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+    <!-- ========================site header========================= -->
+    <header class="headar ">
             <div class="container">
                 <a class="site-logo-link" href="#">
                     <img
                         class="site-logo__img"
                         src="./picture/logo.svg"
                         alt="site logo"
-                        width="226"
+                        width="236"
                         height="26"
                     />
                 </a>
@@ -41,15 +43,26 @@
                         </li>
                     </ul>
                 </nav>
+
+                <button class="hamburger-btn" type="button">
+                    <img
+                        class="hamburger-btn__img"
+                        src="./picture/menu.svg"
+                        alt=" hamburger button img"
+                        width="16"
+                        height="15"
+                    />
+                </button>
             </div>
         </header>
 
-        <!-- =================================site main=========================== -->
+    <!-- =================================site main=========================== -->
 
-        <main class="site-main">
-            <!-- ==============================hero-section============================== -->
-            <section class="intro-section about-us">
-                <div class="container">
+    <main class="site-main">
+        <!-- ==============================hero-section============================== -->
+        <section class="intro-section about-us">
+            <div class="container">
+                <div class="intro-section__wrapper">
                     <h1 class="intro-section__headding">About Us</h1>
                     <p class="intro-section__paragrf">
                         Coffeeroasters began its journey of exotic discovery in
@@ -58,10 +71,11 @@
                         cup - from bean to brew - in every shipment.
                     </p>
                 </div>
-            </section>
-            <!-- =========================our commitment======================================== -->
+            </div>
+        </section>
+        <!-- =========================our commitment======================================== -->
 
-            <section class="our-commitment">
+        <section class="our-commitment">
                 <div class="container">
                     <img
                         class="our-commitment__img"
@@ -94,11 +108,12 @@
                 </div>
             </section>
 
-            <!-- =========================================section quality======================== -->
+        <!-- =========================================section quality======================== -->
 
-            <section class="quality">
-                <div class="container">
-                    <div class="quality-info">
+        <section class="quality">
+            <div class="container">
+                <div class="quality-info">
+                    <div class="quality-info__wrapper">
                         <h2 class="quality__headding">
                             Uncompromising quality
                         </h2>
@@ -113,12 +128,14 @@
                             enjoyable.
                         </p>
                     </div>
+
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- ================================section headquarters========================== -->
+        <!-- ================================section headquarters========================== -->
 
-            <section class="headquarter">
+        <section class="headquarter">
                 <div class="container">
                     <h2 class="headquarter__headding">Our headquarters</h2>
                     <ul class="headquarter__list">
@@ -159,44 +176,45 @@
             </section>
         </main>
 
-         <!-- ==========================================footer====================================== -->
+        <!-- ==========================================footer====================================== -->
 
         <footer class="footer">
             <div class="container">
-                <a class="site-logo-link" href="#">
+                <a class="footer-logo-link" href="#">
                     <img
-                        class="site-logo__img"
+                        class="footer-logo__img"
                         src="./picture/footer.svg"
                         alt="site logo"
                         width="226"
                         height="26"
                     />
                 </a>
-                <nav class="nav footer__nov">
-                    <ul class="nav__list">
-                        <li class="nav__item">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
                             <a
-                                class="nav__link nav__link--active"
+                                class="footer-nav__link nav__link--active"
                                 href="./index.html"
                                 >HOME</a
                             >
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./about.html"
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="./about.html"
                                 >ABOUT US</a
                             >
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./create.html"
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="./create.html"
                                 >Create your plan</a
                             >
                         </li>
                     </ul>
                 </nav>
 
+
                 <ul class="social-list">
                     <li class="social-list__item">
-                        <a class="social-list__link" href="#">
+                        <a class="social-list__link link1" href="#">
                             <img class="social-list__img" 
                                 src="./picture/fecbok.svg"
                                 alt="picture of facebook"
@@ -230,5 +248,7 @@
                 </ul>
             </div>
         </footer>
-    </body>
+        <script src="./main.js"></script>
+</body>
+
 </html>

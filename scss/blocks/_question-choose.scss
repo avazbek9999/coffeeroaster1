@@ -1,11 +1,12 @@
 .question-choose .container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 120px;
     padding: 0 85px;
 }
 
 .left-box {
-    width: 266px;
+    max-width: 266px;
     margin-bottom: 20px;
 }
 
@@ -34,14 +35,14 @@
 }
 
 .left-box__span {
-    margin-right: 24px;
+    margin-right: 10px;
 }
 
 .left-box__span--active {
     color: #0e8784;
 }
 
-// ==============================tight box============================
+// ==============================right box============================
 .choose-form-wrapper{
     display: flex;
     margin: -15px;
@@ -66,7 +67,7 @@
 
 .input-controller {
     display: block;
-    width: 228px;
+    max-width: 228px;
     height: 250px;
     padding: 32px 28px;
     background-color: #f4f1eb;
@@ -98,7 +99,7 @@
 // ===============================
 
 .order{
-    width: 730px;
+    max-width: 730px;
     margin: 0;
     margin-bottom: 40px;
     padding: 27px 64px;
@@ -132,4 +133,84 @@
     background: #0E8784;
     color: #FEFCF7;
     border-radius: 6px;
+}
+
+@media only screen and (max-width: 1140px) {
+    .question-choose .container{
+        padding: 0 40px;
+    }
+    
+
+    .question-choose__list{
+        margin-right: 10px;
+    }
+
+    .choose-form__headding{
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .choose-form__label{
+        margin: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 962px){
+    .question-choose .container{
+       max-width: 100%;
+       padding: 0 30px;
+       
+    }
+    
+    .choose-form{
+        max-width: 100%;
+    }
+
+    .question-choose__list{
+        display: none;
+    }
+
+    .form__button{
+        margin: 0 auto;
+    }
+
+    .order{
+        padding: 44px 27px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    .question-choose .container{
+        padding: 0 20px;
+    }
+    
+    .choose-form-wrapper{
+      
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .input-controller {
+        margin: 0 auto;
+        display: block;
+        max-width: 328px;
+        height: auto;
+        padding: 24px;
+        background-color: #f4f1eb;
+        border-radius: 8px;
+    }
+
+    .choose-form__headding{
+          text-align: center;
+          font-size: 24px;
+          line-height: 24px;
+    }
+
+    .order {
+        padding: 32px 25px;
+    }
+
+
 }

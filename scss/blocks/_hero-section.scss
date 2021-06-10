@@ -1,16 +1,17 @@
 
-.hero-section .container{
-    height: 600px;
-    margin-bottom: 136px;
-    padding: 116px 85px;
-    background-image: url(/picture/Bitmap.png);
-    background-repeat: no-repeat;
-    background-size:cover;
-    border-radius: 10px;
+.hero-section__info{
+    width: 100%;
+     padding: 116px 85px;
+     background-image: url(/picture/Bitmap.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     border-radius: 10px;
+    
 }
 
 .hero-section__headding{
-    width: 493px;
+    max-width: 493px;
     margin: 0;
     padding: 0;
     margin-bottom: 32px;
@@ -23,7 +24,7 @@
 }
 
 .hero-section__paragrf{
-    width: 400px;
+    max-width: 445px ;
     margin: 0;
     margin-bottom: 56px;
     padding: 0;
@@ -35,6 +36,7 @@
 
 .create-link{
     display: inline-block;
+    max-width: 217px;
     padding: 15px 31px;
     text-decoration: none;
     font-family: Fraunces ;
@@ -62,3 +64,54 @@ only screen and (min-resolution: 2dppx){
     }
 }
 
+
+@media only screen and (max-width: 768px ){
+  
+    .hero-section__info{
+        padding: 104px 54px;
+        
+    }
+    .hero-section__headding{
+        max-width: 329px;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+
+    .hero-section__paragrf{
+        max-width: 398px;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+    .create-link{
+        padding: 8px 12px;
+        font-size: 16px; 
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .hero-section__info {
+        
+        margin-bottom: 120px;
+        padding: 100px 24px;
+        text-align: center;
+
+        
+    }
+    
+    .hero-section__headding{
+        margin: 0 auto;
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 40px;
+        
+    }
+
+    .hero-section__paragrf{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+   
+}

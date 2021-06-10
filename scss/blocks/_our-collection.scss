@@ -1,38 +1,57 @@
 .our-collection .small-container {
+    width: 100%;
     display: flex;
     margin-bottom: 179px;
-    width: 1150px;
-    height: 525px;
+    padding-top: 127px;
+    max-width: 1150px;
+    // max-height: 525px;
     background-image: url(../picture/collection.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+
+
 }
 
 .our-collection__list {
     display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-    align-items: flex-end;
+    // align-items: flex-end;
     margin: 0 -15px;
     padding: 0;
     list-style: none;
 }
 
 .our-collection__item {
-    margin: 0;
-    padding: 0;
-    width: 255px;
+    display: inline-block;
+    margin: 0 auto;
     margin: 0 15px;
+    margin-bottom: 30px;
+
+}
+
+.item-wrapper {
+    max-width: 255px;
+
 }
 
 .our-collection__img {
+    display: block;
+    max-width: 255px;
     margin-bottom: 71px;
 }
 
 .our-collection__headding {
+    display: block;
+
     margin: 0;
     margin-bottom: 24px;
     padding: 0;
-    font-family: Fraunces ;
+    font-family: Fraunces;
     font-weight: 900;
     font-size: 24px;
     line-height: 32px;
@@ -40,10 +59,70 @@
 }
 
 .our-collection__paragrf {
-    
+
+
     margin: 0;
     padding: 0;
     font-size: 16px;
     line-height: 26px;
     color: #333d4b;
+}
+
+@media only screen and (max-width: 1150px) {
+   
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .our-collection .small-container {
+        padding-top: 80px;
+    }
+
+    .our-collection__item {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-bottom: 48px;
+    }
+
+    .our-collection__img {
+        margin: 0;
+        margin-right: 36px;
+    }
+
+    .item-wrapper {
+        max-width: 282px;
+        text-align: left;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    .our-collection .small-container {
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 69%);
+        margin-bottom: 100px;
+
+
+    }
+
+
+    .our-collection__item {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .our-collection__img {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .item-wrapper {
+        text-align: center;
+    }
+
 }

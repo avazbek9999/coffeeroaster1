@@ -7,16 +7,17 @@
         <title>Document</title>
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
+
     <body>
         <!-- ==========================site header========================= -->
-        <header class="headar">
+        <header class="headar ">
             <div class="container">
                 <a class="site-logo-link" href="#">
                     <img
                         class="site-logo__img"
                         src="./picture/logo.svg"
                         alt="site logo"
-                        width="226"
+                        width="236"
                         height="26"
                     />
                 </a>
@@ -41,6 +42,16 @@
                         </li>
                     </ul>
                 </nav>
+
+                <button class="hamburger-btn" type="button">
+                    <img
+                        class="hamburger-btn__img"
+                        src="./picture/menu.svg"
+                        alt=" hamburger button img"
+                        width="16"
+                        height="15"
+                    />
+                </button>
             </div>
         </header>
 
@@ -49,36 +60,32 @@
         <main class="site-main">
             <!-- ==============================hero-section============================== -->
             <section class="hero-section">
-                <div class="container">
+            <div class="container">
+                <div class="hero-section__info">
                     <h1 class="hero-section__headding">
                         Great coffee made simple.
                     </h1>
                     <p class="hero-section__paragrf">
-                        Start your mornings with the world’s best coffees. Try
-                        our expertly curated artisan coffees from our best
-                        roasters delivered directly to your door, at your
-                        schedule.
+                        Start your mornings with the world’s best coffees.
+                        Try our expertly curated artisan coffees from our
+                        best roasters delivered directly to your door, at
+                        your schedule.
                     </p>
-                    <a class="create-link hero__link" href="#"
-                        >Create your plan</a
-                    >
+                    <a class="create-link hero__link" href="#">Create your plan</a>
                 </div>
-            </section>
+            </div>
+        </section>
 
             <!-- ==================================our-collection============================ -->
             <section class="our-collection">
-                <div class="container small-container">
-                    <h2 class="visually-hidden">our collection</h2>
-                    <ul class="our-collection__list">
-                        <li class="our-collection__item">
-                            <img
-                                class="our-collection__img"
-                                src="./picture/green-espesso.png"
-                                srcset="./picture/green-espesso.png 1x, ./picture/green-espesso@2x.png 2x"
-                                alt="pictur of coffee"
-                                width="255"
-                                height="193"
-                            />
+            <div class="container small-container">
+                <h2 class="visually-hidden">our collection</h2>
+                <ul class="our-collection__list">
+                    <li class="our-collection__item">
+                        <img class="our-collection__img" src="./picture/green-espesso.png"
+                            srcset="./picture/green-espesso.png 1x, ./picture/green-espesso@2x.png 2x"
+                            alt="pictur of coffee" width="255" height="193" />
+                        <div class="item-wrapper">
                             <h3 class="our-collection__headding">
                                 Gran Espresso
                             </h3>
@@ -86,92 +93,102 @@
                                 Light and flavorful blend with cocoa and black
                                 pepper for an intense experience.
                             </p>
-                        </li>
-                        <li class="our-collection__item">
-                            <img
-                                class="our-collection__img"
-                                src="./picture/planalto.png"
-                                srcset="./picture/planalto.png 1x, ./picture/planalto@2x.png 2x"
-                                alt="pictur of coffee"
-                                width="256"
-                                height="193"
-                            />
+                        </div>
+
+                    </li>
+                    <li class="our-collection__item">
+                        <img class="our-collection__img" src="./picture/planalto.png"
+                            srcset="./picture/planalto.png 1x, ./picture/planalto@2x.png 2x" alt="pictur of coffee"
+                            width="256" height="193" />
+                        <div class="item-wrapper">
                             <h3 class="our-collection__headding">Planalto</h3>
                             <p class="our-collection__paragrf">
                                 Brazilian dark roast with rich and velvety body,
                                 and hints of fruits and nuts.
                             </p>
-                        </li>
-                        <li class="our-collection__item">
-                            <img
-                                class="our-collection__img"
-                                src="./picture/picallo.png"
-                                srcset="./picture/picallo.png 1x, ./picture/picallo@2x.png 2x"
-                                alt="pictur of coffee"
-                                width="255"
-                                height="193"
-                            />
+                        </div>
+
+                    </li>
+                    <li class="our-collection__item">
+                        <img class="our-collection__img" src="./picture/picallo.png"
+                            srcset="./picture/picallo.png 1x, ./picture/picallo@2x.png 2x" alt="pictur of coffee"
+                            width="255" height="193" />
+                        <div class="item-wrapper">
                             <h3 class="our-collection__headding">Piccollo</h3>
                             <p class="our-collection__paragrf">
                                 Mild and smooth blend featuring notes of toasted
                                 almond and dried cherry.
                             </p>
-                        </li>
-                        <li class="our-collection__item">
-                            <img
-                                class="our-collection__img"
-                                src="./picture/danche.png"
-                                srcset="./picture/danche.png 1x, ./picture/danche@2x.png 2x"
-                                alt="pictur of coffee"
-                                width="234"
-                                height="177"
-                            />
+                        </div>
+
+                    </li>
+                    <li class="our-collection__item">
+                        <img class="our-collection__img our-collection__img-last" src="./picture/danche.png"
+                            srcset="./picture/danche.png 1x, ./picture/danche@2x.png 2x" alt="pictur of coffee"
+                            width="235" height="177" />
+                        <div class="item-wrapper">
                             <h3 class="our-collection__headding">Danche</h3>
                             <p class="our-collection__paragrf">
                                 Ethiopian hand-harvested blend densely packed
                                 with vibrant fruit notes.
                             </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
             <!-- =========================choose====================================== -->
             <section class="choose">
                 <div class="container">
-                    <h2 class="choose__headding">Why choose us?</h2>
-                    <p class="choose__paragrf">
-                        A large part of our role is choosing which particular
-                        coffees will be featured in our range. This means
-                        working closely with the best coffee growers to give you
-                        a more impactful experience on every level.
-                    </p>
-                    <ul class="choose__list">
-                        <li class="choose__item">
-                            <h3 class="choose__item__headding">Best quality</h3>
-                            <p class="choose__item__paragrf">
-                                Discover an endless variety of the world’s best
-                                artisan coffee from each of our roasters.
-                            </p>
-                        </li>
-                        <li class="choose__item benifit">
-                            <h3 class="choose__item__headding">
-                                Exclusive benefits
-                            </h3>
-                            <p class="choose__item__paragrf">
-                                Special offers and swag when you subscribe,
-                                including 30% off your first shipment.
-                            </p>
-                        </li>
-                        <li class="choose__item shipping">
-                            <h3 class="choose__item__headding">
-                                Free shipping
-                            </h3>
-                            <p class="choose__item__paragrf">
-                                We cover the cost and coffee is delivered fast.
-                                Peak freshness: guaranteed.
-                            </p>
-                        </li>
-                    </ul>
+                    <div class="choose-wrappwr">
+                        <h2 class="choose__headding">Why choose us?</h2>
+                        <p class="choose__paragrf">
+                            A large part of our role is choosing which
+                            particular coffees will be featured in our range.
+                            This means working closely with the best coffee
+                            growers to give you a more impactful experience on
+                            every level.
+                        </p>
+                        <ul class="choose__list">
+                            <li class="choose__item">
+                                <div class="item__wrapper">
+                                    <h3 class="choose__item__headding">
+                                        Best quality
+                                    </h3>
+                                    <p class="choose__item__paragrf">
+                                        Discover an endless variety of the
+                                        world’s best artisan coffee from each of
+                                        our roasters.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="choose__item benifit">
+                                <div class="item__wrapper">
+                                    <h3 class="choose__item__headding">
+                                        Exclusive benefits
+                                    </h3>
+                                    <p class="choose__item__paragrf">
+                                        Special offers and swag when you
+                                        subscribe, including 30% off your first
+                                        shipment.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="choose__item shipping">
+                                <div class="item__wrapper">
+                                    <h3 class="choose__item__headding">
+                                        Free shipping
+                                    </h3>
+                                    <p class="choose__item__paragrf">
+                                        We cover the cost and coffee is
+                                        delivered fast. Peak freshness:
+                                        guaranteed.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
@@ -180,8 +197,6 @@
                 <div class="container container-small">
                     <div class="work-wrapper">
                         <h2 class="work__headding">How it works</h2>
-                        <span class="work__span"></span>
-                        <span class="work__span2"></span>
                         <ol class="work__list">
                             <li class="work__item">
                                 <span class="work__item__span">01</span>
@@ -228,44 +243,45 @@
                 </div>
             </section>
         </main>
-        <!-- ==========================================footer====================================== -->
-
+        <!-- ============================================footer====================================== -->
+             
         <footer class="footer">
             <div class="container">
-                <a class="site-logo-link" href="#">
+                <a class="footer-logo-link" href="#">
                     <img
-                        class="site-logo__img"
+                        class="footer-logo__img"
                         src="./picture/footer.svg"
                         alt="site logo"
                         width="226"
                         height="26"
                     />
                 </a>
-                <nav class="nav footer__nov">
-                    <ul class="nav__list">
-                        <li class="nav__item">
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
                             <a
-                                class="nav__link nav__link--active"
+                                class="footer-nav__link nav__link--active"
                                 href="./index.html"
                                 >HOME</a
                             >
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./about.html"
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="./about.html"
                                 >ABOUT US</a
                             >
                         </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="./create.html"
+                        <li class="footer-nav__item">
+                            <a class="footer-nav__link" href="./create.html"
                                 >Create your plan</a
                             >
                         </li>
                     </ul>
                 </nav>
 
+
                 <ul class="social-list">
                     <li class="social-list__item">
-                        <a class="social-list__link" href="#">
+                        <a class="social-list__link link1" href="#">
                             <img class="social-list__img" 
                                 src="./picture/fecbok.svg"
                                 alt="picture of facebook"
@@ -299,5 +315,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="./main.js" ></script>
     </body>
 </html>

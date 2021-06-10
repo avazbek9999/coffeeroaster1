@@ -1,11 +1,17 @@
 .intro-section .container{
-    height: 450px;
+    width: 100%;
     margin-bottom: 168px;
-    padding: 137px 85px;
-    background-image: url(/picture/about-pic.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    
 }
+
+.intro-section__wrapper{
+padding: 137px 85px;
+background-image: url(/picture/about-pic.png);
+background-repeat: no-repeat;
+background-position: center ;
+border-radius: 10px;
+}
+
 
 .intro-section__headding {
     margin: 0;
@@ -20,7 +26,7 @@
 
 .intro-section__paragrf {
     margin: 0;
-    width: 445px;
+    max-width: 445px;
     font-size: 16px;
     line-height: 26px;
     color: #FEFCF7;
@@ -34,5 +40,40 @@ only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx){
     .intro-section .container{
         background-image: url(/picture/about-pic@2x.png);
+    }
+}
+
+@media only screen and (max-width: 768px ) {
+
+     .intro-section .container {
+         margin-bottom: 120px;
+     }
+
+     
+    .intro-section__wrapper {
+        padding: 118px 58px;
+        background-position: center;
+    }
+    
+    .intro-section__headding{
+       font-size: 32px;
+       line-height: 40px;
+    }
+    
+
+    .intro-section__paragrf{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .intro-section .container{
+        margin-bottom: 120px;
+    }
+    
+    .intro-section__wrapper {
+        
+        text-align: center;
+        padding: 111px 24px 87px 24px;
     }
 }
