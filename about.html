@@ -77,14 +77,65 @@
 
         <section class="our-commitment">
                 <div class="container">
-                    <img
-                        class="our-commitment__img"
-                        src="/picture/commitment.png"
-                        srcset="/picture/commitment.png 1x, /picture/commitment@2x.png 2x"
-                        alt="the man is preparing coffee"
-                        width="445"
-                        height="520"
-                    />
+                    <picture >
+
+                        <!-- webp -->
+                        <source
+                            type="image/webp"
+                            media="(max-width: 640px)"
+                            srcset="
+                                ./picture/make-coffee-mobile.webp    1x,
+                                ./picture/make-coffee-mobile@2x.webp 2x
+                            "
+                            
+                        />
+
+                        <source
+                            type="image/webp"
+                            media="(max-width:  794px)"
+                            srcset="
+                                ./picture/make-coffee-tablet.webp    1x,
+                                ./picture/make-coffee-tablet@2x.webp 2x
+                            "
+                        />
+
+                        <source
+                            type="image/webp"
+                            srcset="
+                                ./picture/make-coffee.webp    1x,
+                                ./picture/make-coffee@2x.webp 2x
+                            "
+                        />
+                        <!-- desktop -->
+                        <source
+                            media="(max-width: 640px)"
+                            srcset="
+                                ./picture/make-coffee-mobile.jpg    1x,
+                                ./picture/make-coffee-mobile@2x.jpg 2x
+                            "
+                        />
+
+                        <source
+                            media="(max-width: 790px)"
+                            srcset="
+                                ./picture/make-coffee-tablet.jpg    1x,
+                                ./picture/make-coffee-tablet@2x.jpg 2x
+                                
+                            "
+                            
+                        />
+                        <img
+                            class="our-commitment__img"
+                            src="./picture/make-coffee.jpg"
+                            srcset="
+                                ./picture/make-coffee.jpg    1x,
+                                ./picture/make-coffee@2x.jpg 2x
+                            "
+                            alt="man holding coffee"
+                            width="445"
+                            height="520"
+                        />
+                    </picture>
                     <div class="our-commitment__info">
                         <h2 class="our-commitment__headding">Our commitment</h2>
                         <p class="our-commitment__paragrf">
@@ -179,6 +230,7 @@
         <!-- ==========================================footer====================================== -->
 
         <footer class="footer">
+
             <div class="container">
                 <a class="footer-logo-link" href="#">
                     <img
@@ -249,6 +301,7 @@
             </div>
         </footer>
         <script src="./main.js"></script>
+
 </body>
 
 </html>

@@ -1,33 +1,25 @@
-.our-commitment .container{
+.our-commitment .container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 244px;
-    max-width: 1151px;
-    // max-height: 520px;
-}
-
-
-.our-commitment__img{
-   
-    margin-right: 40px;
-}
-
-.our-commitment__info{
+    padding: 0 85px;
     
 }
-.our-commitment__headding{
+
+
+.our-commitment__headding {
     margin: 0;
     margin-bottom: 32px;
-    font-family: Fraunces ;
+    font-family: Fraunces;
     font-weight: 900;
     font-size: 40px;
     line-height: 48px;
     color: #333D4B;
 }
 
-.our-commitment__paragrf{
+.our-commitment__paragrf {
     max-width: 540px;
     margin: 0;
     font-size: 16px;
@@ -36,47 +28,59 @@
     opacity: 0.8;
 }
 
-@media only screen and (max-width: 800px) {
-    .our-commitment__img {
-       max-width: 281px;
-       max-height: 470px;
-       
-    //    margin-right: 20px;  
+@media only screen and (max-width: 1151px) {
+    .our-commitment .container {
+        padding: 0 20px;
     }
 
-    .our-commitment__headding{
+    .our-commitment__img {
+        max-width: 445px;
+        max-height: 520px;
+        margin-right: 20px;
+    }
+
+    .our-commitment__headding {
         margin-bottom: 25px;
         font-size: 32px;
         line-height: 48px;
     }
 
-    .our-commitment__paragrf{
+    .our-commitment__paragrf {
         font-size: 15px;
         line-height: 25px;
     }
-    
+
 }
 
-@media only screen and (max-width: 648px){
-    .our-commitment .container{
-        flex-direction: column;
-        text-align: center;
+@media only screen and (max-width: 790px) {
+    .our-commitment .container {
+        flex-direction: row;
         margin-bottom: 198px;
     }
-    
+
     .our-commitment__img {
-        max-width: 327px;
-        max-height: 400px;
-        margin-right: 0;
-        margin-bottom: 48px;
-  
+        max-width: 281px;
+        max-height: 470px;
+
+
     }
 }
 
 
-@media only screen and (max-width: 370px){
-.our-commitment__img{
- max-width: 281px;
- height: auto;   
-}
+@media only screen and (max-width: 640px) {
+    .our-commitment .container {
+        flex-direction: column;
+        text-align: center;
+       
+    }
+
+
+    .our-commitment__img {
+        margin-right: 0;
+        margin-bottom: 48px;
+        max-width: 327px;
+        height: auto;
+    }
+
+    
 }
